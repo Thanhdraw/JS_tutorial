@@ -99,3 +99,28 @@ function xoaTrung(arr) {
         // => tra ve value x 2
     });
     console.log(listNumberDouble);
+
+    // Hay cho biet su khac nhau trong foreach
+
+    const listnumberTripble = listNumber.forEach((value,index,array)=> {
+      return value * 3;
+    })
+    console.log(listnumberTripble);
+    // Hay cho biet su khac nhau trong foreach (Quan trong)
+
+    // Fillter() -> sang loc cac phan tu trong mang thoa dieu kien nao do
+    
+    const fillTer = listNumber.filter((value,index,arr) => {
+        return value >4;
+    })
+  //   const fillTer = listNumber.filter((value,index,arr) => return value >4;)
+    // console.log(listNumber);
+    console.log(fillTer);
+
+
+
+
+
+// Output: { name: "John", age: 30, city: "New York" }
+
+    
