@@ -174,26 +174,71 @@ console.log(restNumbers);
 // Yêu cầu: Viết một chương trình sử dụng 
 // vòng lặp for để tính tổng của các số từ 1 đến n, 
 // trong đó n là một số nguyên dương nhập từ người dùng.
-var input = prompt("Nhập mảng: ");
-var arr = input.split(" ");
-var result = 0;
+    // var input = prompt("Nhập mảng: ");
+    // var arr = input.split(" ");
+    // var result = 0;
 
-for (let i = 0; i < arr.length; i++) {
-  result += parseInt(arr[i]);
-}
+    // for (let i = 0; i < arr.length; i++) {
+    // result += parseInt(arr[i]);
+    // }
 
-console.log(result);
+    // console.log(result);
 
 // var input = prompt("Nhập các giá trị của mảng, phân tách bằng dấu cách: ");
 // var arr = input.split(" ");
 
 // console.log(arr);
 
+    // var str = "dang quoc thanh";
+    // var result = " ";
+    // for(let i =str.length -1 ; i >= 0; i--){
+    //     console.log(str[i]);
+    //     result = result + str[i];
+    // }
+    // console.log(result);
 
-var str = "dang quoc thanh";
-var result = " ";
-for(let i =str.length -1 ; i >= 0; i--){
-    // console.log(str[i]);
-    result = result + str[i];
+
+// White 
+    // let number2 = 0;
+    // while(i<10){
+    //     console.log("number: " +i);
+    //     i++;
+    // }
+
+// do - while
+    // let number2 = 1;
+
+    // do{
+    //     number2++;
+    //     console.log("number: " +number2);
+    // } while (number2<10) ;
+
+    // Bài 4: Loại bỏ phần tử trùng lập
+    const arr = [ 1,2,1,2,3,4,5,6,6,7,9];
+    const arr2 = [];
+    function checkNumber(count){
+        for(let i =0; i<arr.length; i++){
+           if(!arr2.includes(arr[i])){
+            arr2.push(arr[i]);
+           }
+        }
+       console.log(arr2);
+    }
+    checkNumber();
+
+// Bài 5:
+// ([1,2,3,4,5,6],3) -> [[1,2,3],[4,5,6]]
+// [[1,2,3],[4,5,6]];
+function sliptArray(array,number){
+    let result = [];
+    let index =0;
+    while(index < array.length){
+        result.push(array.slice(index,number + index));
+        index = index + number;
+    }
+    // console.log(array.length);
+    console.log(result);
+    return result;
 }
-console.log(result);
+sliptArray([1,2,3,4,5,6],2);
+
