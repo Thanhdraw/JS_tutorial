@@ -124,36 +124,82 @@ function Classroom() {
       console.log("Sinh viên không tồn tại trong danh sách.");
     }
   }
-  Classroom.prototype.updateStudentInfo = function(student, newName, newAge, newGrade) {
-    var index = this.students.indexOf(student);
-    if (index > -1) {
-      this.students[index].changeName(newName);
-      this.students[index].changeAge(newAge);
-      this.students[index].changeGrade(newGrade);
-      console.log("Đã cập nhật thông tin của sinh viên.");
-    } else {
-      console.log("Sinh viên không tồn tại trong danh sách.");
-    }
-  }
+  // Classroom.prototype.updateStudentInfo = function(student, newName, newAge, newGrade) {
+  //   var index = this.students.indexOf(student);
+  //   if (index > -1) {
+  //     this.students[index].changeName(newName);
+  //     this.students[index].changeAge(newAge);
+  //     this.students[index].changeGrade(newGrade);
+  //     console.log("Đã cập nhật thông tin của sinh viên.");
+  //   } else {
+  //     console.log("Sinh viên không tồn tại trong danh sách.");
+  //   }
+  // }
 
   // Tạo một đối tượng Classroom mới
 var classroom = new Classroom();
 
 // Tạo và thêm một số sinh viên vào danh sách
-var student1 = new Student("John", 20, 8.5);
-var student2 = new Student("Jane", 19, 7.8);
-classroom.addStudent(student1);
-classroom.addStudent(student2);
-classroom.updateStudentInfo(student2, "Jane Smith", 20, 9.2);
-classroom.students.forEach(function(student) {
-    student.displayInfo();
-    console.log("----------------------");
-  });
-  classroom.removeStudent(student1);
-classroom.updateStudentInfo(student2, "Jane Smith", 30, 9.2);
-// Hiển thị danh sách sinh viên sau khi cập nhật
-console.log("Danh sách sinh viên sau khi cập nhật:");
-classroom.students.forEach(function(student) {
-  student.displayInfo();
-  console.log("----------------------");
+
+// var student1 = new Student("John", 20, 8.5);
+// var student2 = new Student("Jane", 19, 7.8);
+// classroom.addStudent(student1);
+// classroom.addStudent(student2);
+// classroom.updateStudentInfo(student2, "Jane Smith", 20, 9.2);
+// classroom.students.forEach(function(student) {
+//     student.displayInfo();
+//     console.log("----------------------");
+//   });
+//   classroom.removeStudent(student1);
+// classroom.updateStudentInfo(student2, "Jane Smith", 30, 9.2);
+// // Hiển thị danh sách sinh viên sau khi cập nhật
+// console.log("Danh sách sinh viên sau khi cập nhật:");
+// classroom.students.forEach(function(student) {
+//   student.displayInfo();
+//   console.log("----------------------");
+// });
+
+
+
+
+
+class sinhVien {
+    constructor(name,age,grade){
+      this.name = name;
+      this.age = age;
+      this.grade = grade;
+      // this.id = "";
+    }
+    displayInfo(){
+      console.log(`Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}, ID: ${this.id}`);
+    
+    }
+}
+var sinhVien1 = new sinhVien("thành",20,10);
+var sinhVien2 = new sinhVien("dangthanh",22,9);
+// Đây là cách 1 đơn giản dể thêm thuộc tính:
+  // sinhVien1.id = 123;
+
+// Đây là cách 2 nâng cao để thêm thuộc tính:
+Object.defineProperty(sinhVien1, "id", {
+  value: 123,
+  writable: true,
+  enumerable: true,
+  configurable: true
 });
+sinhVien1.displayInfo();
+sinhVien.prototype.changeNameSV = function(newName){
+  this.name = newName;
+} 
+sinhVien1.changeNameSV("Minh thảo");
+console.log("***Sau khi cap nhật***");
+sinhVien1.displayInfo();
+
+
+sinhVien.prototype.deleteMethod = function(){
+    delete this.age;
+} 
+sinhVien1.deleteMethod(20)
+console.log("***Sau khi cap nhật***");
+sinhVien1.displayInfo();
+sinhVien2.displayInfo();
