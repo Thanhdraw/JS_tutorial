@@ -20,3 +20,13 @@ Chương 8: DOM
     8.removeAttribute(): xoá phần tư attribute
 
     9.hasAttribute(): kiểm tra selector có attibute hay ko , nếu co trả về true , chưa thì trả false.
+
+
+    10. textContent(): tìm nội dung hoặc thay đổi nội dung
+
+    11. InnerText(): loại bỏ hết khoảng trắng trong vs code
+
+
+    12.innerHTML():
+
+    13. innerHTML();
