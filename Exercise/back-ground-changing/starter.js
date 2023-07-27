@@ -1,5 +1,5 @@
 const button = document.querySelector(".change");
-
+const text = document.querySelector(".text");
 button.addEventListener("click",handleChangeColor);
 
 const colors = ["#27374D","#526D82","#9DB2BF","#DDE6ED"];
