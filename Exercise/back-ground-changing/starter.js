@@ -11,3 +11,4 @@ function handleChangeColor(){
 
         document.body.style.background = color;
 }
+
