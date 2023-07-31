@@ -8,7 +8,7 @@ function handleClick(event) {
   [...tabItems].forEach((item) => item.classList.remove("active"));
   // sau đó add class active vào tab hiện tại
   event.target.classList.add("active");
-
+  
   const tabNumber = event.target.dataset.tab;
 
   [...tabContents].forEach((item) => {
