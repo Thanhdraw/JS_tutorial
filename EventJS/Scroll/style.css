@@ -1,3 +1,8 @@
-body{
-    height: 3000px;
+body {
+    margin: 0;
+    padding: 0;
+    height: 2000px;
+    /* Để tạo độ dài trang để cuộn */
+    transition: background-color 0.5s ease;
+
 }
