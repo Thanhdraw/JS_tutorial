@@ -1,0 +1,32 @@
+
+.joke {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 50px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.joke-heading {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.joke-button {
+  border: 0;
+  outline: none;
+  display: block;
+  padding: 0 30px;
+  border-radius: 8px;
+  color: white;
+  background-color: #20e3b2;
+  position: relative;
+  height: 55px;
+  width: 100%;
+  max-width: 200px;
+}
