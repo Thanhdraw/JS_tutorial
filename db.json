@@ -1,0 +1,140 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe dolor vero accusantium nostrum, quo veritatis repudiandae error reprehenderit repellendus aliquid omnis dolorem, culpa sunt maiores itaque sit soluta iste incidunt.",
+      "author": "ThànhDev"
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 4
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 5
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 6
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 7
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 8
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 9
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 10
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 11
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 12
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 13
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 14
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 15
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 16
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 17
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 18
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 19
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 20
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 21
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 22
+    },
+    {
+      "title": "Back-end Dev",
+      "description": "description",
+      "author": "thanhDang",
+      "id": 23
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
